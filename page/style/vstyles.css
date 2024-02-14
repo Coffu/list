@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.background {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-color: #eb4095;
+    overflow: hidden;
+}
+
+.background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background: url('https://img1.picmix.com/output/stamp/normal/1/2/9/8/378921_1f675.gif');
+    background-size: cover;
+}
+
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://effects1.ru/gallery/GIF/salyut-PNG/iskra-3-0.gif');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.show-overlay .overlay {
+    opacity: 1;
+}
+
+.container {
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 45px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 60%;
+    z-index: 10;
+}
+
+.button-icon {
+    position: absolute;
+    transform: translateY(-20%);
+    max-width: 40px; 
+    max-height: 40px;
+    margin-left: 1%; 
+}
+.yes-button {
+    background-color: #eb2588;
+    color: white;
+    border: none;
+}
+
+.no-button {
+    background-color: #81114f;
+    color: white;
+    border: none;
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+    margin-bottom: 13%;
+}
+
+.text-container {
+    position: absolute;
+    margin-bottom: 25%;
+    color:rgb(255, 255, 255);
+}

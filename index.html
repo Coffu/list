@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <link rel="icon" type="image/x-icon" href="page\image\logo-mail.png">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="page\style\istyles.css">
+        <script defer src="page\style\script\iscript.js"></script>
+        <title>Вам лист!</title>
+    </head>
+    <body class="background">
+        <div class="container">
+            <button class="yes-button" onmouseover="changeContent()" onclick="ValentinePage()">
+                Так
+                <img class="button-icon" src="page\image\yes.png" alt="Icon">
+            </button>
+            <button class="no-button" onmouseover="moveNoButton()">
+                Ні
+                <img class="button-icon" src="page\image\no.png" alt="Icon">
+            </button>
+        </div>
+
+        <div class="image-container">
+            <img id="gifImage" src="https://i.pinimg.com/originals/b4/df/8d/b4df8da8defe7bc7ae65c390f1d2e08d.gif" alt="Initial Image"> 
+        </div>
+
+        <div class="text-container" id="textContent">
+            <h2>Вам прийшов лист бажаєте прочитати?</h2>
+        </div>
+
+        <div class="overlay"></div>
+    </body>
+</html>
