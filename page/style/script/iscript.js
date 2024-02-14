@@ -7,7 +7,7 @@ function changeContent() {
     textContent.innerHTML = '<h2>Ви точно бажаєте прочитати листа??</h2>';
 
     var gifImage = document.getElementById('gifImage');
-    gifImage.src = '/page/image/open-mail.png';
+    gifImage.src = '/list/page/image/open-mail.png';
     gifImage.style.width = '250px'; 
     gifImage.style.height = '250px';
     gifImage.style.position = 'fixed';
